@@ -121,7 +121,6 @@ public class NilaiGUI extends Frame {
     class HitungAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             try {
-
                 float tugas = Float.parseFloat(txtTugas.getText());
                 float kuis = Float.parseFloat(txtKuis.getText());
                 float uts = Float.parseFloat(txtUTS.getText());
@@ -134,7 +133,7 @@ public class NilaiGUI extends Frame {
                     hasil = (tugas * 0.2f) + (kuis * 0.2f) + (uts * 0.3f) + (uas * 0.3f);
                     matkul = "Pemlan";
                 }
-
+                    
                 else if (cbASD.getState()) {
                     hasil = (tugas * 0.25f) + (kuis * 0.25f) + (uts * 0.25f) + (uas * 0.25f);
                     matkul = "ASD";
@@ -159,7 +158,7 @@ public class NilaiGUI extends Frame {
             }
         }
     }
-
+    
     class TampilAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             areaHasil.setText(
